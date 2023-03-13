@@ -7,13 +7,16 @@
     <title>Inicio</title>
     <link rel="stylesheet" href="asistencia/css/css.css" />
   </head>
-  <body>
+  <script src="asistencia/js/script.js"></script>
+  <body onload="alIniciar()">
     <header>
-      <ul>
-        <li>Inicio</li>
-        <li>acerca de</li>
-        <li>contacto</li>
-      </ul>
+      <nav>
+        <ul>
+          <li><a href="">Inicio</a> </li>
+          <li><a href="">acerca de</a></li>
+          <li><a href="">contacto</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
       <div class="link">
@@ -62,7 +65,12 @@
           </div>
           <!-- logo streamate -->
           <div class="espacio" onclick="streamate()">
-          <img src="asistencia/imagenes/logo-dark.png" width="150" height="60" alt="logo streamate" />
+            <img
+              src="asistencia/imagenes/logo-dark.png"
+              width="150"
+              height="60"
+              alt="logo streamate"
+            />
           </div>
           <!-- logo sender -->
           <div class="espacio" onclick="sender()">
@@ -76,45 +84,57 @@
         </div>
       </div>
       <div class="cargue" id="cargue">
-      <div class="area_cargue" id="adult">
-        <h2>AdultWork</h2>
-        <textarea name="adult" id="adult" cols="100" rows="15"></textarea>
-        <button>enviar</button>
-      </div>
-      <div class="area_cargue" id="chaturbate">
-        <h2>chaturbate</h2>
-        <textarea
-          name="chaturbate"
-          id="chaturbate"
-          cols="100"
-          rows="15"
-        ></textarea>
-        <button>enviar</button>
-      </div>
-      <div class="area_cargue" id="stripchat">
-        <h2>stripchat</h2>
-        <textarea
-          name="stripchat"
-          id="stripchat"
-          cols="100"
-          rows="15"
-        ></textarea>
-        <button>enviar</button>
-      </div>
-      <div class="area_cargue" id="streamate">
-        <h2>streamate</h2>
-        <textarea name="streamate" id="streamate" cols="100" rows="15"></textarea>
-        <button>enviar</button>
-      </div>
-      <div class="area_cargue" id="sender">
-        <h2>sender</h2>
-        <textarea name="sender" id="sender" cols="100" rows="15"></textarea>
-        <button>enviar</button>
-      </div>
+        <div class="area_cargue" id="adult">
+          <h2>AdultWork</h2>
+          <textarea class="tex" name="adult" id="adult" cols="100" rows="15" placeholder="pege aqui el o los cortes de AdultWork"></textarea>
+          <button class="btn">ENVIAR</button>
+        </div>
+        <div class="area_cargue" id="chaturbate">
+          <h2>chaturbate</h2>
+          <textarea class="tex"
+            placeholder="pege aqui el o los cortes de Chaturbate"
+            name="chaturbate"
+            id="chaturbate"
+            cols="100"
+            rows="15"
+          ></textarea>
+          <button class="btn">ENVIAR</button>
+        </div>
+        <div class="area_cargue" id="stripchat">
+          <h2>stripchat</h2>
+          <textarea class="tex"
+          placeholder="pege aqui el o los cortes de Stripchat"
+            name="stripchat"
+            id="stripchat"
+            cols="100"
+            rows="15"
+          ></textarea>
+          <button class="btn">ENVIAR</button>
+        </div>
+        <div class="area_cargue" id="streamate">
+          <h2>streamate</h2>
+          <textarea class="tex"
+          placeholder="pege aqui el o los cortes de Streamate"
+            name="streamate"
+            id="streamate"
+            cols="100"
+            rows="15"
+          ></textarea>
+          <button class="btn">ENVIAR</button>
+        </div>
+        <div class="area_cargue" id="sender">
+          <h2>sender</h2>
+          <textarea class="tex" 
+          placeholder="pege aqui el o los cortes de Sender"
+          name="sender" 
+          id="sender" 
+          cols="100" rows="15"
+          ></textarea>
+          <button class="btn">ENVIAR</button>
+        </div>
       </div>
     </main>
 
     <footer></footer>
-    <script src="asistencia/js/script.js"></script>
   </body>
 </html>

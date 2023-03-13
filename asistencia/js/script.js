@@ -59,12 +59,11 @@ function sender(){
    clic = 1;
   }   
 }
-/*function opacity0(){ 
-  if(clic==1){
-  document.getElementById("sender").style.opacity = "none";
-  document.getElementById("chaturbate").style.opacity = "none";
-  document.getElementById("stripchat").style.opacity = "none";
-  document.getElementById("adult").style.opacity = "none";
-  document.getElementById("streamate").style.opacity = "none";
+function alIniciar(){ 
+  document.getElementById("adult").style.display = "none";
+  document.getElementById("chaturbate").style.display = "none";
+  document.getElementById("stripchat").style.display = "none";
+  document.getElementById("streamate").style.display = "none";
+  document.getElementById("sender").style.display = "none";
   }   
-}*/
+
