@@ -37,7 +37,8 @@ nav ul li {
 main {
   margin: 20px;
   padding: 10px;
-  background-color: rgb(191, 216, 216);
+	background-image: url();
+  /* background-color: rgb(191, 216, 216); */
 }
 .link {
   text-align: center;
