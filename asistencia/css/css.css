@@ -106,6 +106,9 @@ boton
   margin: 5px;
 	border: solid 1px rgb(171, 190, 190);
 }
+.zona_revision {
+	min-height: 290px;
+}
 .tex {
   padding: 15px;
 }

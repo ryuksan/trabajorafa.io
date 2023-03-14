@@ -19,9 +19,11 @@
       </nav>
     </header>
     <main>
-      <div class="link">
+      <!-- link tiene los titulos y tiene a click -->
+      <div class="link">    
         <h2>Cargue de paginas</h2>
         <h3>dar click en los logos</h3>
+        <!-- contiene la parte del logos para activar cargue y revicion -->
         <div class="click">
           <!-- logo adult -->
           <div class="espacio" onclick="adult()">
@@ -83,8 +85,11 @@
             />
           </div>
         </div>
+        
       </div>
+      <!-- inicio zona de cargue de cortes -->
       <div class="cargue" id="cargue">
+        <!-- zona adultwork -->
         <div id="adult" class="cargue_revision">
           <div class="area_cargue">
             <h2>AdultWork</h2>
@@ -100,13 +105,17 @@
             por el momento solo se ve asi mas adelante
             agregaremos funcionalidad."
             ></textarea>
-            <button class="btn">ENVIAR</button>
+            <button class="btn">REVISAR</button>
           </div>
-          <div class="area_revision">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius minima maxime 
+          <div class="area_revision">
+            <div class="zona_revision">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius minima maxime 
             consequatur cumque neque necessitatibus ratione, iusto ex optio quae. Earum alias unde placeat porro 
             consequatur nostrum quaerat eveniet in.
-          AdultWork</div>
+            AdultWork</div>
+            <button class="btn">ENVIAR</button>
+          </div>
         </div>
+        <!-- zona chaturbate -->
         <div id="chaturbate" class="cargue_revision">
           <div class="area_cargue">
             <h2>chaturbate</h2>
@@ -122,85 +131,93 @@
               cols="100"
               rows="15"
             ></textarea>
+            <button class="btn">REVISAR</button>
+          </div>
+            <div class="area_revision">
+            <div class="zona_revision">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit accusantium doloremque ullam soluta minima consequuntur dolores maxime perspiciatis, praesentium eligendi suscipit beatae aspernatur dolore! Ullam cumque dignissimos veritatis dolor vitae!chaturbate</div>
+            <button class="btn">ENVIAR</button>
+        </div>
+      </div>
+      <!-- zona stripchat -->
+      <div id="stripchat" class="cargue_revision">
+        <div class="area_cargue">
+          <h2>stripchat</h2>
+          <textarea
+          class="tex"
+          placeholder="
+          pege aqui el o los cortes de Stripchat
+          
+          por el momento solo se ve asi mas adelante
+          agregaremos funcionalidad."
+          name="stripchat"
+          id="stripchat"
+          cols="100"
+          rows="15"
+          ></textarea>
+          <button class="btn">REVISAR</button>
+        </div>
+        <div class="area_revision">
+          <div class="zona_revision">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi fuga quam assumenda vel inventore at? Accusantium assumenda tempore dolores quae impedit natus, eos sequi rerum officiis aliquam odit suscipit ipsum?stripchat</div>
+          <button class="btn">ENVIAR</button>
+        </div>
+      </div>
+      <!-- zona streamate -->
+      <div id="streamate" class="cargue_revision">
+        <div class="area_cargue">
+          <h2>streamate</h2>
+          <textarea
+          class="tex"
+          placeholder="
+          pege aqui el o los cortes de Streamate
+          
+          por el momento solo se ve asi mas adelante
+          agregaremos funcionalidad."
+          name="streamate"
+          id="streamate"
+          cols="100"
+          rows="15"
+          ></textarea>
+          <button class="btn">REVISAR</button>
+        </div>
+        <div class="area_revision">
+          <div class="zona_revision">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius minima maxime 
+            consequatur cumque neque necessitatibus ratione, iusto ex optio quae. Earum alias unde placeat porro 
+            consequatur nostrum quaerat eveniet in. 
+            streamate</div>
             <button class="btn">ENVIAR</button>
           </div>
-            <div class="area_revision">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius minima maxime 
-              consequatur cumque neque necessitatibus ratione, iusto ex optio quae. Earum alias unde placeat porro 
-              consequatur nostrum quaerat eveniet in.
-            chaturbate</div>
         </div>
-        <div>
-
-        </div>
-        <div id="stripchat" class="cargue_revision">
-          <div class="area_cargue">
-            <h2>stripchat</h2>
-            <textarea
-              class="tex"
-              placeholder="
-              pege aqui el o los cortes de Stripchat
-  
-              por el momento solo se ve asi mas adelante
-              agregaremos funcionalidad."
-              name="stripchat"
-              id="stripchat"
-              cols="100"
-              rows="15"
-            ></textarea>
-            <button class="btn">ENVIAR</button>
-          </div>
-            <div class="area_revision">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius minima maxime 
-              consequatur cumque neque necessitatibus ratione, iusto ex optio quae. Earum alias unde placeat porro 
-              consequatur nostrum quaerat eveniet in. 
-              stripchat</div>
-        </div>
-        <div id="streamate" class="cargue_revision">
-          <div class="area_cargue">
-            <h2>streamate</h2>
-            <textarea
-              class="tex"
-              placeholder="
-              pege aqui el o los cortes de Streamate
-              
-              por el momento solo se ve asi mas adelante
-              agregaremos funcionalidad."
-              name="streamate"
-              id="streamate"
-              cols="100"
-              rows="15"
-            ></textarea>
-            <button class="btn">ENVIAR</button>
-          </div>
-            <div class="area_revision">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius minima maxime 
-              consequatur cumque neque necessitatibus ratione, iusto ex optio quae. Earum alias unde placeat porro 
-              consequatur nostrum quaerat eveniet in. 
-              streamate</div>
-        </div>
+        <!-- zona sender -->
         <div id="sender" class="cargue_revision">
           <div class="area_cargue">
             <h2>sender</h2>
             <textarea
-              class="tex"
-              placeholder="
-              pege aqui el o los cortes de Sender
-              
-              por el momento solo se ve asi mas adelante
-              agregaremos funcionalidad."
-              name="sender"
-              id="sender"
-              cols="100"
-              rows="15"
+            class="tex"
+            placeholder="
+            pege aqui el o los cortes de Sender
+            
+            por el momento solo se ve asi mas adelante
+            agregaremos funcionalidad."
+            name="sender"
+            id="sender"
+            cols="100"
+            rows="15"
             ></textarea>
-            <button class="btn">ENVIAR</button>
+            <button class="btn">REVISAR</button>
           </div>
-            <div class="area_revision">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius minima maxime 
+          <div class="area_revision">
+            <div class="zona_revision">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius minima maxime 
               consequatur cumque neque necessitatibus ratione, iusto ex optio quae. Earum alias unde placeat porro 
               consequatur nostrum quaerat eveniet in.
-            sender</div>
-        </div>
-      </div>
-    </main>
+              sender</div>
+            <button class="btn">ENVIAR</button>
+          </div>
+          </div>
 
+        </div>
+
+      </main>
+      
     <footer></footer>
   </body>
 </html>
