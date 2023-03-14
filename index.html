@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="asistencia/css/css.css" />
   </head>
   <script src="asistencia/js/script.js"></script>
+  <script src="asistencia/js/cortes.js"></script>
   <body onload="alIniciar()">
     <header>
       <nav>
@@ -96,7 +97,7 @@
             <textarea
               class="tex"
               name="adult"
-              id="adult"
+              id="adults"
               cols="100"
               rows="15"
               placeholder="
@@ -105,14 +106,14 @@
             por el momento solo se ve asi mas adelante
             agregaremos funcionalidad."
             ></textarea>
-            <button class="btn">REVISAR</button>
+            <button class="btn" onclick="cortes()">REVISAR</button>
           </div>
           <div class="area_revision">
-            <div class="zona_revision">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius minima maxime 
+            <div class="zona_revision" id="revicion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius minima maxime 
             consequatur cumque neque necessitatibus ratione, iusto ex optio quae. Earum alias unde placeat porro 
             consequatur nostrum quaerat eveniet in.
             AdultWork</div>
-            <button class="btn">ENVIAR</button>
+            <div class="boton"><button class="btn">ENVIAR</button></div>
           </div>
         </div>
         <!-- zona chaturbate -->

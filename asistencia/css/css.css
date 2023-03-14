@@ -37,8 +37,7 @@ nav ul li {
 main {
   margin: 20px;
   padding: 10px;
-	background-image: url();
-  /* background-color: rgb(191, 216, 216); */
+  background-color: rgb(191, 216, 216);
 }
 .link {
   text-align: center;
@@ -100,12 +99,26 @@ boton
 	border: solid 1px rgb(171, 190, 190);
 }
 .area_revision {
-	max-width: 800px;
-  height: 350px;
+	justify-content: center;
+	max-width: 660px;
+  height: 1000px;
   padding: 10px;
   overflow: hidden;
   margin: 5px;
+	position: relative;
 	border: solid 1px rgb(171, 190, 190);
+}
+.boton {
+	background-color: black;
+	max-width: auto;
+	max-height: 50px;
+	min-width: auto;
+	min-height: 50px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	
 }
 .zona_revision {
 	min-height: 290px;
@@ -114,7 +127,7 @@ boton
   padding: 15px;
 }
 .btn {
-  margin-top: 15px;
+  margin-top: 1px;
   padding: 10px;
   align-items: center;
   width: 200px;
