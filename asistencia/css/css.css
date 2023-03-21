@@ -1,151 +1,63 @@
-* {
-  margin: 0px;
-  padding: 0px;
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'EB Garamond', serif;
 }
-body {
-  min-width: 820px;
-}
-header {
-  position: sticky;
-  top: 0;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  font-family: Times New Roman;
-  font-size: 1.3rem;
-  gap: 15px;
+/* contiene la parte de losgos y zonas de revicion de informacion */
+.cargue-de-paginas {
   background-color: rgb(191, 216, 216);
-}
-nav ul {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-}
-a:link,
-a:visited,
-a:active {
-  text-decoration: none;
-  color: black;
 }
 
-nav ul li {
-  margin-left: 20px;
-  margin-right: 20px;
-  padding: 5px 5px;
-  background-color: rgb(171, 190, 190);
-  border: solid 1px black;
-}
-main {
-  margin: 20px;
-  padding: 10px;
-  background-color: rgb(191, 216, 216);
-}
-.link {
-  text-align: center;
-  letter-spacing: 0.5rem;
-  align-items: center;
-  justify-content: center;
-}
-.click {
+section {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 5px;
-  padding: 10px 10px;
+  text-align: center;
 }
+/* div de los logos */
 .espacio {
-  border: solid 2px black;
-  background-color: rgb(171, 190, 190);
-  padding: 5px;
-  max-width: 150px;
-  max-height: 60px;
-  min-width: 150px;
-  min-height: 60px;
-}
-.cargue {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  text-align: center;
+  min-width: 160px;
+  min-height: 70px;
+  max-width: 165px;
+  max-height: 75px;
   align-items: center;
   justify-content: center;
-  margin-top: 15px;
-  margin-bottom: 5px;
-  padding: 10px;
+  border: 1px solid black;
+  padding: 2.5px;
+  margin: 2px;
+  background-color: rgb(150, 200, 200);
 }
-.cargue_revision {
-  display: inline-block;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
+/* area de cargue */
+.area_cargue {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+/* barra de navegacion */
+.navbar {
+  padding: 2rem;
+  background-color: rgb(191, 216, 216);
+}
+.navbar-collapse {
   align-items: center;
-  padding: 10px;
+  justify-content: space-between;
 }
 
-/*area_cargue contiene 
-titulo
-texto area
-boton
-*/
-.area_cargue {
-  opacity: 100%;
-  letter-spacing: 0.5rem;
-  max-width: 800px;
-  max-height: 350px;
-  padding: 10px;
-  float: left;
-  margin: 5px;
-  border: solid 1px rgb(171, 190, 190);
-}
-.area_revision {
-  display: flex;
-  flex-direction: row;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  max-width: auto;
-  height: auto;
-  padding: 10px;
-  overflow: hidden;
-  margin: 5px;
-  position: relative;
-  border: solid 1px rgb(171, 190, 190);
-  min-width: 350px;
-}
-.boton {
-  max-width: auto;
-  max-height: 60px;
-  min-width: auto;
-  min-height: 60px;
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-.zona_revision {
-  max-width: 500px;
-  min-width: 360px;
-  min-height: 290px;
-  margin-bottom: 70px;
-}
-.zona_revision li {
-  font-size: 16px;
-  font-weight: bold;
-  text-align: left;
-}
+
+/* adtable (responsive textarea */
 .tex {
   padding: 15px;
+  -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: solid 1px black;
+
+    width: 90%;
 }
-.btn {
-  margin-top: 1px;
-  padding: 10px;
-  align-items: center;
-  width: 200px;
-  height: 50px;
-  font-size: 26px;
-  font-weight: bold;
-  letter-spacing: 0.5rem;
-  border: solid 3px black;
-  border-radius: 25px;
+/* adaptable (responsive logo nav */
+@media screen and (max-width: 767px) {
+  .navbar-brand {
+    display: none;
+  }
 }
+
