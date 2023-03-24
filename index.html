@@ -58,15 +58,15 @@
               class="navbar-nav d-flex justify-content-center align-items-center"
             >
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
+                <a class="nav-link active" aria-current="page" href="index.html"
                   >Inicio</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Acerca De</a>
+                <a class="nav-link" href="AcercaDe.html">Acerca De</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contacto</a>
+                <a class="nav-link" href="Contacto.html">Contacto</a>
               </li>
             </ul>
           </div>
@@ -76,7 +76,7 @@
 
     <main>
       <!-- link tiene los titulos y tiene a click -->
-      <section class="cargue-de-paginas align-items-stretch">
+      <section class="cargue-de-paginas align-items-stretch container borde">
         <div class="container">
           <h2>Cargue de paginas</h2>
           <h3>dar click en los logos</h3>
@@ -164,7 +164,7 @@
             por el momento solo se ve asi mas adelante
             agregaremos funcionalidad."
               ></textarea>
-              <button class="btn" onclick="adultwork()">REVISAR</button>
+              <button class="btn-secondary" onclick="adultwork()">REVISAR</button>
             </div>
             <div class="area_revision">
               <div class="zona_revision" id="revision_adultwork">
@@ -173,7 +173,8 @@
                 iusto ex optio quae. Earum alias unde placeat porro consequatur
                 nostrum quaerat eveniet in. AdultWork
               </div>
-              <div class="boton"><button class="btn">ENVIAR</button></div>
+              <div class="boton"><button class="btn-secondary " onclick="enviar()">ENVIAR</button></div>
+              <div class="boton"><button class="btn-close" onclick="enviar()"></button></div>
             </div>
           </div>
 
@@ -193,11 +194,12 @@
                 cols="100"
                 rows="15"
               ></textarea>
-              <button class="btn" onclick="corteChat()">REVISAR</button>
+              <button class="btn-secondary" onclick="corteChat()">REVISAR</button>
             </div>
             <div class="area_revision">
               <div class="zona_revision" id="r"></div>
-              <div class="boton"><button class="btn">ENVIAR</button></div>
+              <div class="boton"><button class="btn-secondary" onclick="enviar()">ENVIAR</button></div>
+              <div class="boton"><button class="btn-close" onclick="enviar()"></button></div>
             </div>
           </div>
           <!-- zona stripchat -->
@@ -216,7 +218,7 @@
                 cols="100"
                 rows="15"
               ></textarea>
-              <button class="btn" onclick="corteStrip()">REVISAR</button>
+              <button class="btn-secondary" onclick="corteStrip()">REVISAR</button>
             </div>
             <div class="area_revision">
               <div class="zona_revision" id="s">
@@ -225,7 +227,8 @@
                 assumenda tempore dolores quae impedit natus, eos sequi rerum
                 officiis aliquam odit suscipit ipsum?stripchat
               </div>
-              <div class="boton"><button class="btn">ENVIAR</button></div>
+              <div class="boton"><button class="btn-light" onclick="enviar()">ENVIAR</button></div>
+              <div class="boton"><button class="btn-close" onclick="enviar()"></button></div>
             </div>
           </div>
           <!-- zona streamate -->
@@ -244,7 +247,7 @@
                 cols="100"
                 rows="15"
               ></textarea>
-              <button class="btn" onclick="corteStream()">REVISAR</button>
+              <button class="btn-secondary" onclick="corteStream()">REVISAR</button>
             </div>
             <div class="area_revision">
               <div class="zona_revision" id="t">
@@ -253,7 +256,8 @@
                 iusto ex optio quae. Earum alias unde placeat porro consequatur
                 nostrum quaerat eveniet in. streamate
               </div>
-              <div class="boton"><button class="btn">ENVIAR</button></div>
+              <div class="boton"><button class="btn-secondary" onclick="enviar()">ENVIAR</button></div>
+              <div class="boton"><button class="btn-close" onclick="enviar()"></button></div>
             </div>
           </div>
           <!-- zona sender -->
@@ -272,7 +276,7 @@
                 cols="100"
                 rows="15"
               ></textarea>
-              <button class="btn">REVISAR</button>
+              <button class="btn-secondary">REVISAR</button>
             </div>
             <div class="area_revision">
               <div class="zona_revision">
@@ -281,40 +285,151 @@
                 iusto ex optio quae. Earum alias unde placeat porro consequatur
                 nostrum quaerat eveniet in. sender
               </div>
-              <div class="boton"><button class="btn">ENVIAR</button></div>
+              <div class="boton"><button class="btn-secondary" onclick="enviar()">ENVIAR</button></div>
+              <div class="boton"><button class="btn-close" onclick="enviar()"></button></div>
             </div>
           </div>
         </div>
       </section>
 
-      <section>
-        <h1>Registro Modelos</h1>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum
-          maxime minima fugiat sapiente qui necessitatibus architecto, iusto
-          magni obcaecati consectetur dolores consequatur voluptas officiis,
-          accusantium eaque? Et tempore magni quidem.
-        </p>
+      <section class="borde container">
+        <div>
+          <h1>Registro Modelos</h1>
+          <button type="submit" onclick="formularioModelo()">Regristar Modelo</button>
+         <!-- formulario de registro -->
+          <div id="formularioModelo">
+            <!-- primer nombre -->
+            <div class="mb-3">
+              <label for="primerNombre" class="form-label">Primer Nombre:</label>
+              <input type="text" class="form-control" id="primerNombre" placeholder="Ejemplo: Primernombre">
+            </div>
+            <!-- segundo nombre -->
+            <div class="mb-3">
+              <label for="segundoNombre" class="form-label">Segundo Nombre:</label>
+              <input type="text" class="form-control" id="segundoNombre" placeholder="Ejemplo: Segundonombre">
+            </div>
+            <!-- primer apellido -->
+            <div class="mb-3">
+              <label for="primerApellido" class="form-label">Primer Apellido:</label>
+              <input type="text" class="form-control" id="primerApellido" placeholder="Ejemplo: primerapellido">
+            </div>
+            <!-- segundo apellido -->
+            <div class="mb-3">
+              <label for="segundoApellido" class="form-label">Segundo Apellido:</label>
+              <input type="text" class="form-control" id="segundoApellido" placeholder="Ejemplo: Segundo Apellido">
+            </div>
+            <!-- fecha de nacimiento -->
+            <div class="mb-3">
+              <label for="nacimiento" class="form-label">Fecha De Nacimiento:</label>
+              <input type="date" class="form-control" id="nacimiento">
+            </div>
+            <!-- nacionalidad -->
+            <div class="mb-3">
+              <label for="nacionalidad" class="form-label">Nacionalidad:</label>
+              <input type="text" class="form-control" id="nacionalidad" placeholder="Ejemplo: Colombia">
+            </div>
+            <!-- cedula -->
+            <div class="mb-3">
+              <label for="cedula" class="form-label">Cedula:</label>
+              <input type="number" class="form-control" id="cedula" placeholder="Ejemplo: 0123456789">
+            </div>
+            <!-- pasaporte -->
+            <div class="mb-3">
+              <label for="pasaporte" class="form-label">Pasaporte:</label>
+              <input type="text" class="form-control" id="pasaporte" placeholder="ABC 0123456789">
+            </div>
+            <!-- banco -->
+            <div class="mb-3">
+              <label for="banco" class="form-label">Banco:</label>
+              <input type="text" class="form-control" id="banco" placeholder="Bancolombia">
+            </div>
+            <!-- numero de cuenta -->
+            <div class="mb-3">
+              <label for="numero_de_cuenta" class="form-label">N° De Cuentas Bancaria:</label>
+              <input type="number" class="form-control" id="numero_de_cuenta" placeholder="Ejemplo: 0123456789">
+            </div>
+            <!-- tipo de cuenta -->
+            <div class="mb-3">
+              <label for="tipo_de_cuenta" class="form-label">Tipo De Cuenta:</label>
+              <input type="text" class="form-control" id="tipo_de_cuenta" placeholder="Ejemplo: Bancolombia">
+            </div>
+            <!-- celular -->
+            <div class="mb-3">
+              <label for="celular" class="form-label">Celular:</label>
+              <input type="number" class="form-control" id="celular" placeholder="Ejemplo: 0123456789">
+            </div>
+            <!-- correo -->
+            <div class="mb-3">
+              <label for="email" class="form-label">Direccion De Correo Electronico:</label>
+              <input type="email" class="form-control" id="email" placeholder="name@example.com">
+            </div>
+            <!-- direccion -->
+            <div class="mb-3">
+              <label for="direccion" class="form-label">Direccion:</label>
+              <input type="text" class="form-control" id="direccion" placeholder="Calle 15 # 15 - 15">
+            </div>
+            <div class="boton"><button class="btn-outline-secondary" onclick="formularioModelo1()">ENVIAR</button></div>
+            <div class="boton"><button class="btn-close" onclick="formularioModelo1()"></button></div>
+          </div>
+
+          <button type="submit">Editar Modelo</button>
+
+          <button type="submit">Ver Modelos</button>
+        </div>
       </section>
 
-      <section>
-        <h1>Vitrina</h1>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi a
-          quas non autem consectetur voluptatum molestias ullam saepe nulla
-          ducimus? Architecto distinctio cum beatae tenetur magnam, non
-          assumenda ullam obcaecati!
-        </p>
+      <section class="borde container">
+        <div>
+          <h1>Vitrina</h1>
+          <button type="submit" onclick="formularioProducto()">Regristar Producto</button>
+
+          <div id="formularioProducto">
+            <!-- nombre -->
+            <div class="mb-3">
+              <label for="nombre" class="form-label">Nombre:</label>
+              <input type="text" class="form-control" id="nombre" placeholder="Ejemplo: mi nombre">
+            </div>
+            <!-- descripcion -->
+            <div class="mb-3">
+              <label for="descripcion" class="form-label">Descripcion:</label>
+              <input type="text" class="form-control" id="descripcion" placeholder="Ejemplo: celular, azul, marca, capacidad, modelo">
+            </div>
+            <!-- valor de compra -->
+            <div class="mb-3">
+              <label for="compra" class="form-label">Valor De Compra:</label>
+              <input type="number" class="form-control" id="compra" placeholder="Ejemplo: 10000">
+            </div>
+            <!-- valor de venta -->
+            <div class="mb-3">
+              <label for="venta" class="form-label">Valor De Venta:</label>
+              <input type="number" class="form-control" id="venta" placeholder="Ejemplo: 15000">
+            </div>
+            <!-- cantidad -->
+            <div class="mb-3">
+              <label for="cantidad" class="form-label">Cantidad:</label>
+              <input type="number" class="form-control" id="cantidad"  placeholder="Ejemplo: 15">
+            </div>
+            <div class="boton"><button class="btn-outline-secondary" onclick="formularioProducto1()">ENVIAR</button></div>
+            <div class="boton"><button class="btn-close" onclick="formularioProducto1()"></button></div>
+          </div>
+          
+            <button type="submit">Editar Producto</button>
+          
+            <button type="submit">Ver Productos</button>
+
+        </divcontainer>
       </section>
 
-      <section>
-        <h1>Descuentos</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet unde
-          molestiae sunt! Alias laudantium ad qui quasi, ipsa totam voluptatibus
-          exercitationem fuga amet id laboriosam nemo animi blanditiis veritatis
-          officia?
-        </p>
+      <section class="borde container">
+        <div>
+          <h1>Descuentos</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet unde
+            molestiae sunt! Alias laudantium ad qui quasi, ipsa totam voluptatibus
+            exercitationem fuga amet id laboriosam nemo animi blanditiis veritatis
+            officia?
+          </p>
+        </div>
       </section>
     </main>
 

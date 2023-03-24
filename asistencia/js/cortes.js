@@ -26,14 +26,14 @@ function adultwork() {
   //   eliminarDatos2_2.push(z);
   // }
   // //pasar el segundo array a objeto con Object.assign
-  // for (let a of eliminarDatos2_2) {
-  //   ac1 = Object.assign({
-  //     id: a[2],
-  //     fecha: a[0],
-  //     creditos: parseFloat(a[1] * -1),
-  //   });
-  //   array2AObjeto.push(ac1);
-  // }
+  /*for (let a of eliminarDatos2_2) {
+    ac1 = Object.assign({
+      id: a[2],
+      fecha: a[0],
+      creditos: parseFloat(a[1] * -1),
+    });
+    array2AObjeto.push(ac1);
+  }*/
   // // pasando el primer array a objeto
   // const objetoCortes = array2AObjeto.reduce((acc, item) => {
   //   acc[item.id] = item;
