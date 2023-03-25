@@ -151,20 +151,23 @@
           <!-- zona adultwork -->
           <div id="adult" class="cargue_revision">
             <div class="area_cargue">
-              <h2>AdultWork</h2>
-              <textarea
-                class="tex"
-                name="adult"
-                id="adults"
-                cols="100"
-                rows="15"
-                placeholder="
-            pege aqui el o los cortes de AdultWork
-  
-            por el momento solo se ve asi mas adelante
-            agregaremos funcionalidad."
-              ></textarea>
-              <button class="btn-secondary" onclick="adultwork()">REVISAR</button>
+                <h2>AdultWork</h2>
+                <textarea
+                  class="tex"
+                  name="adult"
+                  id="adults"
+                  cols="100"
+                  rows="15"
+                  placeholder="
+                ge aqui el o los cortes de AdultWork
+                
+                r el momento solo se ve asi mas adelante
+                regaremos funcionalidad."
+                ></textarea>
+                <div class="boton">
+                  <button class="btn-secondary" onclick="adultwork()">CORTE</button>
+                  <button class="btn-secondary" onclick="parcial()">PARCIAL</button>
+                </div class="boton">
             </div>
             <div class="area_revision">
               <div class="zona_revision" id="revision_adultwork">
@@ -441,7 +444,11 @@
       crossorigin="anonymous"
     ></script>
     <!-- javascript wilson -->
+    <!-- js funcionalidad -->
     <script src="asistencia/js/script.js"></script>
+    <!-- js adult corte -->
+    <script src="asistencia/js/adultcorte.js"></script>
+    <!-- js demas paginas por el momento -->
     <script src="asistencia/js/cortes.js"></script>
   </body>
 </html>
