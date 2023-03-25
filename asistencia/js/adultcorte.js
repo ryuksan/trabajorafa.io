@@ -51,7 +51,7 @@ function adultwork() {
   }
   //convirtiendo un array de objetos en una lista 
   let foo = array2AObjeto.map(function (bar) {
-    return "<li>" + bar.user + " " + bar.fecha + " " + bar.creditos + "</li>";
+    return "<li><b>" + bar.fecha +  " <b>-</b> " + bar.user + "    $" + bar.creditos + "</b></li>";
   });
   //muestra de datos en div
   document.getElementById("revision_adultwork").innerHTML = foo;
