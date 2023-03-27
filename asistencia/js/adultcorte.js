@@ -50,14 +50,43 @@ function adultwork() {
     array2AObjeto.push(ac1);
   }
   //convirtiendo un array de objetos en una lista 
-  let foo = array2AObjeto.map(function (bar) {
+  /*let foo = array2AObjeto.map(function (bar) {
     return "<li><b>" + bar.fecha +  " <b>-</b> " + bar.user + "    $" + bar.creditos + "</b></li>";
-  });
+  });*/
+  //creacion de tabla
+  let crearTabla = function(array2AObjeto) {
+    let stringTabla = "<tr><th>Fecha</th><th>User</th><th>Creditos</th></tr>";
+    for (let object of array2AObjeto) {
+      let fila = "<tr>";
+
+      fila += "<td>";
+      fila += object.fecha;
+      fila += "</td>";
+
+      fila += "<td>";
+      fila += object.user;
+      fila += "</td>";
+      
+      fila += "<td>";
+      fila += object.creditos;
+      fila += "</td>";
+
+      fila += "</tr>";
+
+      stringTabla += fila;      
+    }
+    return stringTabla;
+  }
+
   //muestra de datos en div
-  document.getElementById("revision_adultwork").innerHTML = foo;
+  document.getElementById("revision_adultwork").innerHTML = crearTabla(array2AObjeto);
   //solo para revicion
-  console.log(foo);
+  console.log(crearTabla(array2AObjeto));
+  
 }
+
+
+
 //creacion de funcion para parcial 
   function parcial() {
     let parcialAdult = [];
@@ -65,6 +94,11 @@ function adultwork() {
      let arrays2 = [];
      let arrayofarray = [];
      let divisionDeString = [];
+     let divisionDeString2 = [];
+     let divisionDeString3 = [];
+     let limpieza = [];
+     let final = [];
+     let arrayobjeto = [];
      //creacion de variable para filter en creditosPagina
      const busqueda = "0	0";
      //creacion de expression regular para hacer el filter
@@ -76,14 +110,51 @@ function adultwork() {
      };
      for (let m of arrayofarray) {
       for (let x of m) {
-        divisionDeString.push(x.split(" "));
+        divisionDeString.push(x.split(/\t/));
       }
     }
-     for (let z of divisionDeString){
-      
-        z = z.filter((i) => i !== "Performs");
-      
-     }
-     document.getElementById("revision_adultwork").innerHTML = divisionDeString;
-     console.log(divisionDeString);
+    for (let f of divisionDeString){
+      divisionDeString2.push(f.splice(1, 7))
+    }
+    for (let r of divisionDeString){
+      divisionDeString3.push(r.splice(2,3))
+    }
+    for (let t of divisionDeString){
+      for (let o of t){
+        limpieza.push(o.split(" "));
+      }
+    }
+    for (let q of limpieza){
+      if (q.length >= 8){
+        final.push(q.splice(1, 30));
+      }
+    }
+    for (let i = 0; i < limpieza.length; i += 2){
+      const user = limpieza[i][0];
+      const creditos = limpieza[i+1][0];
+      arrayobjeto.push({ user: user, creditos: creditos });
+    }
+// creacion de tabla para mostrar elementos
+    let crearTabla = function(arrayobjeto) {
+      let stringTabla = "<tr><th>User</th><th>Creditos</th></tr>";
+      for (let object of arrayobjeto) {
+        let fila = "<tr>";
+  
+        fila += "<td>";
+        fila += object.user;
+        fila += "</td>";
+        
+        fila += "<td>";
+        fila += object.creditos;
+        fila += "</td>";
+  
+        fila += "</tr>";
+  
+        stringTabla += fila;      
+      }
+      return stringTabla;
+    }
+    
+     document.getElementById("revision_adultwork").innerHTML = crearTabla(arrayobjeto);
+     console.log(crearTabla(arrayobjeto));
 }
